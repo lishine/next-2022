@@ -2,10 +2,17 @@
 
 html,
 body {
+	width: 100%;
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
 		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#__next {
+	width: 100%;
+	height: 100%;
 }
 
 a {
@@ -25,4 +32,50 @@ a {
 		color: white;
 		background: black;
 	}
+}
+
+.image-gallery-slide .image-gallery-description {
+	bottom: 30px;
+	left: 50%;
+	width: 80%;
+	transform: translateX(-50%);
+	background-color: rgba(100, 100, 100, 0.2);
+	color: black;
+	font-weight: 600;
+	font-size: 30px;
+	/* border-radius: 1px; */
+}
+
+@media (orientation: portrait) {
+	.image-gallery-slide {
+		padding-top: 100px;
+	}
+}
+
+@media (orientation: landscape) {
+	.image-gallery-slide .image-gallery-description {
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 80px;
+		width: 250px;
+	}
+}
+
+.image-gallery-index {
+	font-size: 2em;
+	color: black;
+	font-weight: 600;
+	font-size: 30px;
+	background-color: rgba(100, 100, 100, 0.2);
+}
+
+.image-gallery,
+.image-gallery-content,
+.image-gallery-slide-wrapper,
+.image-gallery-swipe,
+.image-gallery-slides,
+.image-gallery-slide {
+	width: 100%;
+	height: 100%;
 }
